@@ -5,7 +5,8 @@
                        company-nixos-options))
 
 (defun nixos/init-nix-mode ()
-  (use-package nix-mode))
+  (use-package nix-mode)
+  (add-to-list 'spacemacs-indent-sensitive-modes 'nix-mode))
 
 (defun nixos/init-nixos-options ()
   (use-package nixos-options))
